@@ -1,0 +1,46 @@
+header {
+	height: 40vh;
+	// display: flex;
+	// flex-direction: column;
+	// justify-content: center;
+	// align-items: center;
+	background: url(http://unsplash.it/500/300);
+	background-size: cover;
+}
+
+header .wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+h1 {
+	padding: 5% 5%;
+	border: 2px solid grey;
+	background: url(http://unsplash.it/500/300);
+	-webkit-background-clip: text;
+	font-size: 3rem;
+	text-transform: uppercase;
+	letter-spacing: 1rem;
+	width: 60%;
+	a {
+		color: transparent;
+	}
+}
+
+.titleCutout {
+    background: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0);
+
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+p {
+    background: url(http://unsplash.it/500/300);
+    font-size: 2rem;
+    -webkit-background-clip: text;
+}

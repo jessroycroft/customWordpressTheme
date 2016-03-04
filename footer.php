@@ -1,7 +1,13 @@
 <footer>
-  <div class="container">
-    <p>&copy; HackerYou <?php echo date('Y'); ?></p>
-  </div>
+  <div class="topFooter">
+	<?php wp_nav_menu( array(
+	    'theme_location' => 'footer'
+	)); ?>
+   </div>
+   <div class="bottomFooter">
+   	<p>Coded by <a href="http://jessroycroft.com">Jess Roycroft</a> <?php echo date('Y'); ?></p>
+   </div>
+ 
 </footer>
 
 <script>

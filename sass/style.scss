@@ -8,8 +8,10 @@
 */
 
 @import 'normalize';
+@import 'variables';
 @import 'typography';
 @import 'navigation';
+@import 'header';
 @import 'sidebar';
 @import 'comments';
 @import 'footer';
@@ -27,13 +29,12 @@ body {
 	color: #333;
 }
 
-.container {
+.wrapper {
 	max-width: 1200px;
 	margin: 0 auto;
 }
 
 .content {
-	float: left;
 	width: 65%;
 	margin-right: 5%;
 }
@@ -41,6 +42,11 @@ body {
 .full {
 	width: 100%;
 }
+
+#searchform {
+	color: red;
+}
+
 
 
 
