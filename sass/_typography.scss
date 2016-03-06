@@ -3,10 +3,11 @@ html {
 }
 
 a {
-	// color: #BA209B;
+	color: $olivegreen;
 	text-decoration: none;
+	transition: all 0.3s;
 	&:hover {
-		// color: #D424B1;
+		color: darken($olivegreen, 7%);
 	}
 }
 
@@ -14,6 +15,20 @@ a {
 
 p {
 	line-height: 1.5;
+	font-size: 1.5rem;
+	font-family: 'News Cycle', sans-serif;
+}
+
+// Heading
+
+h2 {
+	font-family: 'Neuton', serif;
+	font-weight: 400;
+	color: $brown;
+}
+
+h2 a {
+	color: $brown;
 }
 
 /*blockquotes*/

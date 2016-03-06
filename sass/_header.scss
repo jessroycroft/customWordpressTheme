@@ -1,11 +1,7 @@
 header {
-	height: 40vh;
-	// display: flex;
-	// flex-direction: column;
-	// justify-content: center;
-	// align-items: center;
-	background: url(http://unsplash.it/500/300);
-	background-size: cover;
+	height: 30vh;
+	background-image: url(images/girlonbike.jpeg);
+	background-position: 55% 29%;
 }
 
 header .wrapper {
@@ -15,15 +11,19 @@ header .wrapper {
 	justify-content: center;
 }
 
-h1 {
-	padding: 5% 5%;
+header h1 {
+	padding: 3% 2%;
 	border: 2px solid grey;
-	background: url(http://unsplash.it/500/300);
+	background-image: url(images/girlonbike.jpeg);
+	background-position: 55% 30%;
 	-webkit-background-clip: text;
 	font-size: 3rem;
 	text-transform: uppercase;
 	letter-spacing: 1rem;
-	width: 60%;
+	font-family: 'News Cycle', sans-serif;
+	@media (max-width: 595px) {
+		padding: 5%;
+	}
 	a {
 		color: transparent;
 	}
@@ -39,8 +39,10 @@ h1 {
     text-align: center;
 }
 
-p {
-    background: url(http://unsplash.it/500/300);
+header p {
+    background-image: url(images/girlonbike.jpeg);
+    background-position: 55% 39%;
     font-size: 2rem;
+    margin: 0;
     -webkit-background-clip: text;
 }
