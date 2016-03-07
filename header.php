@@ -23,7 +23,7 @@
           <?php bloginfo( 'name' ); ?>
         </a>
       </h1>
-      <p><?php bloginfo('description'); ?></p>
+      <p class="tagline"><?php bloginfo('description'); ?></p>
     </div>
 
   </div> <!-- /.titleCutout -->

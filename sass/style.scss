@@ -41,8 +41,6 @@ body {
 .content {
 	width: 70%;
 	margin: 0 auto;
-	position: relative;
-	top: -40px;
 	background: white;
 }
 
@@ -51,6 +49,9 @@ body {
 	flex-direction: row;
 	flex-wrap: wrap;
 	margin: 0 auto;
+	position: relative;
+	top: -40px;
+	background: white;
 }
 
 .full {
@@ -84,20 +85,16 @@ body {
 }
 
 article img {
-	width: 100%;
-	height: 150px;
+	margin: 0 auto;
 	display: block;
 }
 
 .highlightPost {
 	width: 100%;
-	// background: pink;
 	margin-top: 0;
 	height: 50vh;
 	background-position: center;
 	background-size: cover;
-	// display: flex;
-	// flex-direction: column;
 	h2 {
 		text-align: center;
 		margin: 0;
@@ -127,14 +124,35 @@ article img {
 
 }
 
-.container .fullPage {
-	top: 0;
-	img {
-		border-radius: 50%;
-	}
+.entry-meta {
+	text-align: center;
+	text-transform: uppercase;
+	color: $textgrey;
 }
 
+.singleHeader {
+	height: 500px;
+	width: 100%;
+	padding-top: 20px;
+}
 
+.singlePage {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.singlePage img {
+	border-radius: 50%;
+	
+}
+
+p.date {
+	text-align: center;
+}
+
+.singlePage {
+	padding-bottom: 10%;
+}
 
 
 

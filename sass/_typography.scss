@@ -17,11 +17,12 @@ p {
 	line-height: 1.5;
 	font-size: 1.5rem;
 	font-family: 'News Cycle', sans-serif;
+	color: $textgrey;
 }
 
 // Heading
 
-h2 {
+h2, h3 {
 	font-family: 'Neuton', serif;
 	font-weight: 400;
 	color: $brown;
@@ -29,6 +30,15 @@ h2 {
 
 h2 a {
 	color: $brown;
+}
+
+h2.entry-title {
+	font-size: 3rem;
+	text-align: center;
+}
+
+h3 {
+	text-align: center;
 }
 
 /*blockquotes*/

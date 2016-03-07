@@ -1,11 +1,22 @@
 .sidebar {
-	width: 30%;
-	float: left;
+	width: 50%;
+	margin: 0 auto;
+	h3 {
+		font-size: 1.8rem;
+		text-align: left;
+	}
 	ul {
 		margin: 0;
 		padding: 0;
 		li {
 			list-style: none;
+			font-size: 1.4rem;
 		}
 	}
 }
+
+.widget-container {
+	width: 50%;
+	float: left;
+}
+

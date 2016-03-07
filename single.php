@@ -2,16 +2,17 @@
 
 <div class="main">
   <div class="container">
-    <div class="content">
+    <div class="content fullPage">
       <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-
+        <p class="categoryLink"><?php the_category() ?></p>
         <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-          <h1 class="entry-title"><?php the_title(); ?></h1>
+          <h2 class="entry-title"><?php the_title(); ?></h2>
 
           <div class="entry-meta">
             <?php hackeryou_posted_on(); ?>
           </div><!-- .entry-meta -->
 
+        <img class="singleHeader" src="<?php the_post_thumbnail_url("large") ?>" alt="">
           <div class="entry-content">
             <?php the_content(); ?>
             <?php wp_link_pages(array(
@@ -19,11 +20,6 @@
               'after' => '</div>'
             )); ?>
           </div><!-- .entry-content -->
-
-          <div class="entry-utility">
-            <?php hackeryou_posted_in(); ?>
-            <?php edit_post_link( 'Edit', '<span class="edit-link">', '</span>' ); ?>
-          </div><!-- .entry-utility -->
         </div><!-- #post-## -->
 
         <div id="nav-below" class="navigation">

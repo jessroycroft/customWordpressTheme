@@ -3,11 +3,13 @@
 <?php if ( ! have_posts() ) : ?>
 
 	<article id="post-0" class="post error404 not-found">
-		<h1 class="entry-title">Not Found</h1>
-		<section class="entry-content">
-			<p>Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post.</p>
-			<?php get_search_form(); ?>
-		</section><!-- .entry-content -->
+		<div class="single-page">
+			<h1 class="entry-title">Not Found</h1>
+			<section class="entry-content">
+				<p>Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post.</p>
+				<?php get_search_form(); ?>
+			</section><!-- .entry-content -->
+		</div>
 	</article><!-- #post-0 -->
 
 <?php endif; // end if there are no posts ?>
@@ -35,7 +37,7 @@
 			</section><!-- .entry-content -->
 
 			<footer>
-				<p><?php the_time('F j, Y') ?></p>
+				<p class="date"><?php the_time('F j, Y') ?></p>
         		<p><?php edit_post_link( 'Edit', '<span class="edit-link">', '</span>' ); ?></p>
 			</footer>
 

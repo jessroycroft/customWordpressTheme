@@ -46,15 +46,18 @@ h3 {
 		list-style: decimal;
 	}
 	.avatar {
-		position: absolute;
-		top: 4px;
-		left: 0;
+		
 	}
+}
+
+article img.avatar {
+	width: 60px;
+	height: 60px;
 }
 
 .comment-author {
 	cite {
-		color: #000000;
+		color: $darkgrey;
 		font-style: normal;
 		font-weight: 700;
 	}
@@ -151,10 +154,15 @@ h3#reply-title {
 	font-weight: 400;
 }
 
+#commentform {
+	width: 75%;
+	margin: 0 auto;
+}
+
 #respond {
 	.required {
 		color: #ff4b33;
-		font-weight: 700;
+		font-weight: 400;
 	}
 	label {
 		color: #888888;
